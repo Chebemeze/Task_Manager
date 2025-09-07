@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-a$!7qs@foxed5dv0b_c15k)h_@pkh!uda0#7)q-l1^wimwhf+y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['chebem.pythonanywhere.com']
 
 
 # Application definition
@@ -170,7 +170,7 @@ CSRF_COOKIE_SECURE = True
 INSTALLED_APPS += ["csp"]
 # adds csp to installed apps
 MIDDLEWARE += ["csp.middleware.CSPMiddleware"]
-#Enforces csp policy 
+#Enforces csp policy
 
 # Example policy:
 CONTENT_SECURITY_POLICY = {
