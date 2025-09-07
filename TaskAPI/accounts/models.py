@@ -12,7 +12,7 @@ class CustomUserManager(BaseUserManager):
 
     if not extra_fields.get('is_superuser', False):
       # extra_fields.get('is_superusr', False) checks if it a superuser
-      # if no value is given it fives it False. if not False passes the if
+      # if no value is given it gives it False. if not False passes the if
       # statement and moves to the nested if statement to check the
       # date of birth and profile photo
       if not extra_fields.get('date_of_birth'):
