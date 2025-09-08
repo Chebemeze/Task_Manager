@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-a$!7qs@foxed5dv0b_c15k)h_@pkh!uda0#7)q-l1^wimwhf+y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['chebem.pythonanywhere.com']
 
 
 # Application definition
@@ -165,12 +165,21 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 # # ensure csrf cookies are only sent via HTTPS
 
 
+# <<<<<<< HEAD
+# After installing django-csp. we insclude the above codes so the site can
+# utilize csp headers in its response
+# INSTALLED_APPS += ["csp"]
+# adds csp to installed apps
+# MIDDLEWARE += ["csp.middleware.CSPMiddleware"]
+#Enforces csp policy
+# =======
 # # After installing django-csp. we insclude the above codes so the site can
 # # utilize csp headers in its response
 # INSTALLED_APPS += ["csp"]
 # # adds csp to installed apps
 # MIDDLEWARE += ["csp.middleware.CSPMiddleware"]
 # #Enforces csp policy 
+# >>>>>>> 44c5c5d8092ae4cf048c7bbf7a0518083f73f9bc
 
 # # Example policy:
 # CONTENT_SECURITY_POLICY = {
